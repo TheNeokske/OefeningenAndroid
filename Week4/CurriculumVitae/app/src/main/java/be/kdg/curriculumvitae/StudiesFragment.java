@@ -36,6 +36,7 @@ public class StudiesFragment extends Fragment {
         lvStudies = (ListView) view.findViewById(R.id.lvStudies);
         StudyAdapter studyAdapter = new StudyAdapter(getActivity().getApplicationContext(), Study.studies);
         lvStudies.setAdapter(studyAdapter);
+
     }
 
     private void addEventHandlers() {
