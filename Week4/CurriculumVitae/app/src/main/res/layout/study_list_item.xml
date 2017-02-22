@@ -22,6 +22,7 @@
         android:layout_toEndOf="@id/ivSchoolIcon"
         android:text="@string/lorem"
         android:textSize="12sp"
+        android:textColor="@color/black"
         android:layout_marginStart="10dp" />
 
     <TextView
@@ -35,6 +36,7 @@
         android:gravity="center_vertical"
         android:text="@string/lorem"
         android:textSize="16sp"
+        android:textColor="@color/black"
         android:layout_marginStart="10dp" />
 
 </RelativeLayout>

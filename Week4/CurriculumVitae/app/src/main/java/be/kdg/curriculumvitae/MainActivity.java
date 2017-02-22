@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private ListView lvMenu;
@@ -22,7 +21,7 @@ public class MainActivity extends Activity {
                                     View view,
                                     int position,
                                     long id) {
-                if (position==0) {
+                if (position == 0) {
                     Intent intent = new Intent(MainActivity.this, StudiesActivity.class);
                     startActivity(intent);
                 }

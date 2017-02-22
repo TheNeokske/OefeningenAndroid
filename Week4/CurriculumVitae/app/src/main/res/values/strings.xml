@@ -7,4 +7,7 @@
     </string-array>
     <string name="mijn_studies">Mijn Study\'s</string>
     <string name="lorem">Lorem ipsum</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
