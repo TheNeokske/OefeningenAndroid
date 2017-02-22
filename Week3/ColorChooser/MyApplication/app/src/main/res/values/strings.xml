@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ColorChooser</string>
+    <string name="rood">Rood</string>
+    <string name="groen">Groen</string>
+    <string name="blauw">Blauw</string>
+    <string name="defaultwaarde">0</string>
+    <string name="hex">Hexadecimal</string>
+</resources>

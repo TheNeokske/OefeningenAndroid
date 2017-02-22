@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConferenceApp</string>
+    <string-array name="opties">
+        <item>Sessions</item>
+        <item>Location</item>
+        <item>Shedule</item>
+    </string-array>
+</resources>
