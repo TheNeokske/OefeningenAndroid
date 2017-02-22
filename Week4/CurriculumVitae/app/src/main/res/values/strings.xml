@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CurriculumVitae</string>
+    <string-array name="menu">
+        <item>Studies</item>
+        <item>Ervaring</item>
+        <item>Hobby\'s</item>
+    </string-array>
+    <string name="mijn_studies">Mijn Study\'s</string>
+    <string name="lorem">Lorem ipsum</string>
+</resources>
