@@ -1,5 +1,7 @@
 package com.ddns.theneokske.colorchooser;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +20,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initialiseViews();
+        addEventListeners();
+        readSharedPrefs();
+    }
+
+    private void readSharedPrefs() {
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+
+        int defaultRed = getResources().getInteger(R.integer.defaultRed);
+        int defaultGreen = getResources().getInteger(R.integer.defaultGreen);
+        int defaultBlue = getResources().getInteger(R.integer.defaultBlue);
+
+        int red = sharedPreferences.getInt(getString(R.string.save_red_key), defaultRed);
+        int green = sharedPreferences.getInt(getString(R.string.save_green_key), defaultGreen);
+        int blue = sharedPreferences.getInt(getString(R.string.save_blue_key), defaultBlue);
+
+        editTextRood.setText(String.valueOf(red));
+        editTextGroen.setText(String.valueOf(green));
+        editTextBlauw.setText(String.valueOf(blue));
+    }
+
+    private void initialiseViews() {
         seekBarRood = (SeekBar) findViewById(R.id.seekbar1);
         seekBarRood.setMax(255);
         seekBarGroen = (SeekBar) findViewById(R.id.seekbar2);
@@ -30,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
         editTextHex = (EditText) findViewById(R.id.hex);
         editTextHex.setKeyListener(null);
         view = findViewById(R.id.kleurView);
+    }
 
+    private void addEventListeners() {
         SeekBar.OnSeekBarChangeListener seekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
 
             @Override
@@ -94,5 +120,16 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(test.length());
         editTextHex.setText(test.toUpperCase());
         view.setBackgroundColor(kleur);
+        writeSharedPrefs();
+    }
+
+    private void writeSharedPrefs() {
+        SharedPreferences sharedPreferences = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt(getString(R.string.save_red_key), Integer.parseInt(editTextRood.getText().toString()));
+        editor.putInt(getString(R.string.save_green_key), Integer.parseInt(editTextGroen.getText().toString()));
+        editor.putInt(getString(R.string.save_blue_key), Integer.parseInt(editTextBlauw.getText().toString()));
+        editor.apply();
     }
 }

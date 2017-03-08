@@ -5,4 +5,7 @@
     <string name="blauw">Blauw</string>
     <string name="defaultwaarde">0</string>
     <string name="hex">Hexadecimal</string>
+    <string name="save_red_key">redKey</string>
+    <string name="save_green_key">greenKey</string>
+    <string name="save_blue_key">blueKey</string>
 </resources>
