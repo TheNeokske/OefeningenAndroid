@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudentenApp</string>
+    <string name="naam">Naam:</string>
+    <string name="voornaam">Voornaam:</string>
+    <string name="stundentennummer">Stundentennummer:</string>
+    <string name="klas">Klas:</string>
+    <string name="vorige">Vorige</string>
+    <string name="volgende">Volgende</string>
+</resources>

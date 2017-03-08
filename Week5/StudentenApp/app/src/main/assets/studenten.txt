@@ -1,0 +1,12 @@
+Vermeulen;Jos;12;INF103A
+Van Hoof;Marianne;189;INF102A
+Haest;Wim;18976;INF101B
+Wouters;Griet;145;INF101A
+Masschelier;Kirsten;3;INF105B
+Stoop;Flup;896;INF107A
+Wyns;Sven;8985;INF107A
+Vermassen;Tim;764576;INF102B
+Vanderpoel;Gerrit;345;INF103B
+Aemelinckx;Siegfried;896;INF107A
+Vermeylen;Werner;5451;INF105A
+Hoogstraten;Koen;1443;INF105B
