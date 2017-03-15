@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="rood">#ff0004</color>
+    <color name="groen">#26ff00</color>
+    <color name="blauw">#001aff</color>
 </resources>

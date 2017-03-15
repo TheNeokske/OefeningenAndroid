@@ -26,18 +26,19 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/RoodeTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rood" />
 
             <EditText
                 android:id="@+id/edRood"
+                style="@style/EditStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/EditStyle"
                 android:layout_marginLeft="50dp"
                 android:inputType="number"
-                android:text="@string/defaultwaarde"/>
+                android:text="@string/defaultwaarde" />
         </LinearLayout>
 
         <SeekBar
@@ -51,6 +52,7 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/GroeneTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/groen" />
@@ -61,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:inputType="number"
-                android:text="@string/defaultwaarde"/>
+                android:text="@string/defaultwaarde" />
         </LinearLayout>
 
         <SeekBar
@@ -75,6 +77,7 @@
             android:orientation="horizontal">
 
             <TextView
+                style="@style/BlauweTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/blauw" />
@@ -85,8 +88,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:inputType="number"
-                android:text="@string/defaultwaarde"/>
+                android:text="@string/defaultwaarde" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:inputType="number"
-                android:text="@string/defaultwaarde"/>
+                android:text="@string/defaultwaarde" />
         </LinearLayout>
 
         <View
