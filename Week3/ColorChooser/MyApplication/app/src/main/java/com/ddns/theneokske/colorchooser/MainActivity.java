@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
@@ -23,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
         initialiseViews();
         addEventListeners();
         readSharedPrefs();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void readSharedPrefs() {
