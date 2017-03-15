@@ -1,9 +1,9 @@
 package com.example.koenengels.mylist;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
